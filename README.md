@@ -12,9 +12,13 @@ To install Clojure CLI Tools:
 
 ## Usage
 
-Run the project directly:
+All books:
 
-    $ clojure -m baritonehands.potter <book number (1-7)> <output dir>
+    clojure -m baritonehands.potter <output dir>
+
+Single book:
+
+    clojure -m baritonehands.potter <book num (1-7)> <output dir>
 
 ## License
 

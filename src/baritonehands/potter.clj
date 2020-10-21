@@ -56,7 +56,13 @@
         (download-audio src download-dir))
       (recur (inc cur-page)))))
 
+(defn str->book [book]
+  (dec (Integer/parseInt book)))
+
 (defn -main
-  [& [book dir]]
-  (let [root (roots (dec (Integer/parseInt book)))]
-    (download-all root dir)))
+  [& args]
+  (let [[books dir] (if (= (count args) 2)
+                      [[(str->book (first args))] (second args)]
+                      [(range 0 7) (first args)])]
+    (doseq [book books]
+      (download-all (roots book) dir))))
