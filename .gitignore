@@ -11,3 +11,8 @@
 .hg/
 .idea/
 *.iml
+.clj-kondo/
+.lsp/
+output.calva-repl
+.calva/
+.DS_Store

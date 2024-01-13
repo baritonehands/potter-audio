@@ -9,13 +9,13 @@
   (:import (java.net URL)))
 
 (def roots
-  ["https://potteraudio.com/stephen-fry-hp-sorcerer-stone/"
-   "https://potteraudio.com/stephen-fry-chamber-of-secret/"
-   "https://potteraudio.com/stephen-fry-prisoner-azkaban-aud/"
-   "https://potteraudio.com/stephen-fry-fire/"
-   "https://potteraudio.com/stephen-fry-order-of-ph/"
-   "https://potteraudio.com/stephen-fry-hp-half-blood-prince/"
-   "https://potteraudio.com/stephen-fry-deathly-audio/"])
+  ["https://potteraudio.com/harry-potter-sorcerer-stone-stephen-fry/"
+   "https://potteraudio.com/potter-potter-chamber-secret-stephen-fry/"
+   "https://potteraudio.com/hp-harry-potter-prisoner-azkaban/"
+   "https://potteraudio.com/harry-potter-goblet-fire-book-stephen-fry/"
+   "https://potteraudio.com/stephen-fry-harry-potter-order-of-phoenix-sens/"
+   "https://potteraudio.com/stephen-fry-harry-potter-half-prince-audiobook-hp/"
+   "https://potteraudio.com/stephen-fry-harry-potter-and-the-deathly-hallows-img-ir-post-neveike-27/"])
 
 (defn page [root page]
   (if (> page 1)
